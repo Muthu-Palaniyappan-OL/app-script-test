@@ -30,7 +30,7 @@ jobs:
         env:
           CLASPRC_JSON: ${{ secrets.CREDENTIALS_JSON }}
         run: |
-          echo '$CLASPRC_JSON' > .clasprc.json
+          echo '$CLASPRC_JSON' > ~/.clasprc.json
 
       - name: Push to Google Apps Script
         run: clasp push -f
